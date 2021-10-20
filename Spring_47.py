@@ -783,6 +783,7 @@ class compression:
                         qqwslenf="%0"+qqwslenf+"x"
                         jl=binascii.unhexlify(qqwslenf % n)
                         sssssw=len(jl)
+                        namea="c"+namea
                         with open(namea, "ab") as f2ww:             
                             f2ww.write(jl)
                             jls=jl
@@ -865,7 +866,8 @@ class compression:
                         numberschangenotexist = []
                         numbers = []
                        
-            
+                        
+                        nameas=nameas[1:]
                         with open(nameas, "w") as f4:
                                 f4.write(s)
                         with open(nameas, "a") as f3:
@@ -957,7 +959,6 @@ class compression:
                                 
                                
             
-                               
                                 with open(nameas, "ab") as f2:
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
                                     lenf=len(sda)
